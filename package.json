@@ -2,7 +2,7 @@
   "name": "joi-picker",
   "version": "1.0.0",
   "description": "Add pick method on Joi to select fields from Joi schema.",
-  "main": "./pick.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha"
   },

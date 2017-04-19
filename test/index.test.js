@@ -1,4 +1,4 @@
-const Picker = require('../lib/picker.js')
+const Picker = require('../index.js')
 const Joi = require('joi')
 const expect = require('chai').expect
 const _cloneDeep = require('lodash.cloneDeep')
