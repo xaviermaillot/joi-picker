@@ -1,6 +1,6 @@
 {
   "name": "joi-picker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add pick method on Joi to select fields from Joi schema.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Xquicky/joi-picker.git"
+    "url": "git+https://github.com/xaviermaillot/joi-picker.git"
   },
   "keywords": [
     "Joi",
@@ -18,9 +18,9 @@
   "author": "xmaillot",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Xquicky/joi-picker/issues"
+    "url": "https://github.com/xaviermaillot/joi-picker/issues"
   },
-  "homepage": "https://github.com/Xquicky/joi-picker#readme",
+  "homepage": "https://github.com/xaviermaillot/joi-picker#readme",
   "dependencies": {
     "chai": "^3.5.0",
     "joi": "^10.4.1",
