@@ -12,14 +12,14 @@ module.exports = Joi.object().keys({
   testObjectComplete: Joi.object().keys({
     subTest4: Joi.string(),
     subTest5: Joi.object().keys({
-        subSubTest1: Joi.object().keys({
-          subSubSubTest1: Joi.string(),
-          subSubSubTest2: Joi.number(),
-          subSubSubTest3: Joi.boolean()
-        }),
-        subSubTest2: Joi.string(),
-        subSubTest3: Joi.number(),
-        subSubTest4: Joi.boolean()
+      subSubTest1: Joi.object().keys({
+        subSubSubTest1: Joi.string(),
+        subSubSubTest2: Joi.number(),
+        subSubSubTest3: Joi.boolean()
+      }),
+      subSubTest2: Joi.string(),
+      subSubTest3: Joi.number(),
+      subSubTest4: Joi.boolean()
     }),
     subTest6: Joi.array().items(Joi.any())
   }),

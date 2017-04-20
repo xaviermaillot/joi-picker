@@ -11,7 +11,7 @@ const pickInternal = function (describe, source, propertyName) {
       _forEach(childrens, (key) => {
         result[key] = pickInternal(describe.children[key], source[key], key)
       })
-    break
+      break
     case 'array':
       result = []
       const arrayType = describe.items[0].type
@@ -24,7 +24,7 @@ const pickInternal = function (describe, source, propertyName) {
           result.push(value)
         })
       }
-    break
+      break
     default:
       result = source
   }

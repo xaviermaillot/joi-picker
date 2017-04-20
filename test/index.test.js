@@ -1,16 +1,16 @@
-const Picker = require('../index.js')
+/* eslint-env mocha */
+
+const Picker = require('../source/picker.js')
 const Joi = require('joi')
 const expect = require('chai').expect
 const _cloneDeep = require('lodash.cloneDeep')
 
 describe('Joi pick method test', () => {
-
   it('should be a function', () => {
-    expect(Picker.pick).to.be.a('Function');
+    expect(Picker.pick).to.be.a('Function')
   })
 
   it('should picked from schema', () => {
-
     const completeSchema = require('./schema/complete')
 
     const expected = {
@@ -50,11 +50,10 @@ describe('Joi pick method test', () => {
 
     const pickedData = Picker.pick(modified, completeSchema)
 
-    expect(pickedData).not.to.be.null
+    expect(pickedData).not.to.equal(null)
     expect(pickedData).to.deep.equal(expected)
 
     const validationError = Joi.validate(pickedData, completeSchema).error
-    expect(validationError).to.be.null
+    expect(validationError).to.equal(null)
   })
-
 })
