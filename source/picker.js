@@ -9,7 +9,11 @@ const pickInternal = function (describe, source, propertyName) {
       const childrens = Object.keys(describe.children)
       result = {}
       _forEach(childrens, (key) => {
-        result[key] = pickInternal(describe.children[key], source[key], key)
+        try {
+          result[key] = pickInternal(describe.children[key], source[key], key)
+        } catch (e) {
+          // The error can come from an optionnal field and we don't perform validation here.
+        }
       })
       break
     case 'array':
