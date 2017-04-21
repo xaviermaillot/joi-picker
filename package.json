@@ -1,6 +1,6 @@
 {
   "name": "joi-picker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Add pick method on Joi to select fields from Joi schema.",
   "main": "index.js",
   "scripts": {
